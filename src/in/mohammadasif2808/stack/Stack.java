@@ -37,12 +37,13 @@ public class Stack<T> {
         size--;
         
         return data;
+    } 
+    
+    public T peek() throws StackUnderflowExceptions {
+        if(size ==0) {
+            throw new StackUnderflowExceptions();
+        }
         
-//    public T peek() throws StackUnderflowExceptions {
-//        if(size ==0) {
-//            throw new StackUnderflowExceptions();
-//        }
-//        
-//        return top.getData();
-//    }
+        return top.getData();
+    }
 }
