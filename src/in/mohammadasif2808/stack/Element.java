@@ -1,0 +1,35 @@
+package in.mohammadasif2808.stack;
+
+/**
+ *
+ * @author mohammad asif
+ * @Email: mohammadasif2808@gmail.com
+ * @Date: Feb 3, 2024
+ * @Time: 9:04:05 AM
+ */
+public class Element<T> {
+    private T data;
+    private Element<T> next;
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public Element<T> getNext() {
+        return next;
+    }
+
+    public void setNext(Element<T> next) {
+        this.next = next;
+    }
+
+    public Element(T data, Element<T> next) {
+        this.data = data;
+        this.next = next;
+    }
+    
+}
